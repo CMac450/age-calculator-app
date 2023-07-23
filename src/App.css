@@ -1,0 +1,198 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 160px;
+  margin: auto auto;
+  padding: 10px;
+  width: 600px;
+  vertical-align: middle;
+}
+
+.card-body {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.input-row {
+  display: flex;
+  width: auto;
+}
+
+input {
+  font-family: Poppins;
+  padding: 15px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  height: 20px;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 25px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+input:hover, input:active, input:focus, input:focus-within {
+  outline: 1px solid hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+p.result-text {
+  font-family: Poppins;
+  color: hsl(0, 0%, 8%);
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 80px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  font-variant-caps: small-caps;
+  letter-spacing: 2px;
+}
+
+span[class="result-num"] {
+  color: hsl(259, 100%, 65%);
+}
+
+span[class="error-text"], label[class="invalid-label"] {
+  font-family: Poppins;
+  color: hsl(0, 100%, 67%);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+button {
+  border-radius: 100%;
+  background-color: hsl(259, 100%, 65%);
+  border-color: hsl(259, 100%, 65%);
+  border-style: solid;
+  cursor: pointer;
+  background-image: url("../assets/images/icon-arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+}
+
+hr {
+  width: 450px;
+  color: #fcfcfc71;
+  background-color: #fcfcfc71;
+}
+
+/*place button and divider on same row and center align both items*/
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+
+/* remove input arrows in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* remove input arrows in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 100px;
+    margin: auto auto;
+    width: 80dvw;
+    vertical-align: middle;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    width: 300px;
+  }
+
+  hr {
+    width: 290px;
+    color: #fcfcfc71;
+    background-color: #fcfcfc71;
+    flex-shrink: 0;
+  }
+
+  button {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -60%;
+    border-radius: 100%;
+    background-color: hsl(259, 100%, 65%);
+    border-color: hsl(259, 100%, 65%);
+    border-style: solid;
+    cursor: pointer;
+    background-image: url("../assets/images/icon-arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;  
+  }
+
+   p.result-text {
+    font-family: Poppins;
+    color: hsl(0, 0%, 8%);
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0px;
+  }
+
+  input {
+    font-family: Poppins;
+    padding: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    height: 20px;
+    border-radius: 8px;
+    width: 50px;
+    font-size: 19px;
+    border: .5px solid hsl(0, 0%, 86%);
+  }
+
+  .card-body {
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+}
